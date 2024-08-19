@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palabras Desordenadas</title>
+    <link rel="stylesheet" href="Juego1.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Juego de Palabras Desordenadas</h1>
+        <label for="level">Selecciona el nivel:</label>
+        <select id="level" onchange="selectLevel()">
+            <option value="facil">Fácil</option>
+            <option value="intermedio">Intermedio</option>
+        </select>
+        <p id="scrambled-word"></p>
+        <input type="text" id="user-input" placeholder="Ingresa la palabra">
+        <button onclick="checkWord()">Comprobar</button>
+        <p id="result"></p>
+        <div class="scoreboard">
+            <p id="score"></p>
+            <p id="high-score"></p>
+            <p id="timer">Tiempo: 10s</p>
+        </div>
+    </div>
+    <script src="Juego1.js"></script>
+</body>
+</html>
+
+
+
